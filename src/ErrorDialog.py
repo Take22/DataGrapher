@@ -5,6 +5,7 @@ from PyQt5 import uic
 
 form_class = uic.loadUiType("ui/ErrorDialog.ui")[0]
 
+
 class ErrorDialog(QDialog, form_class):
     def __init__(self, errorText):
         super().__init__()
@@ -24,5 +25,3 @@ if __name__ == '__main__':
     main = ErrorDialog()
     main.show()
     sys.exit(app.exec_())
-
-    

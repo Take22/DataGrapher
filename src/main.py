@@ -14,6 +14,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from CheckDataframeIndexDialog import CheckDataframeIndexDialog
 from ErrorDialog import ErrorDialog
 from PandasModel import PandasModel
+# from tab2 import tab2
 
 formClass = uic.loadUiType("ui/main2.ui")[0]
 
@@ -63,7 +64,10 @@ class Main(QMainWindow, formClass):
 
         self.relationLayout.addWidget(self.canvas)
 
+        # tab2
+
     # 파일 불러오기 기능 - dialog (파일 불러오기 및 상관관계분석 그래프 생성)
+
     def openMenu(self):
         self.dataView.reset()
 
@@ -117,11 +121,13 @@ class Main(QMainWindow, formClass):
 
             self.canvas.draw()
 
-            # # 데이터에서 컬럼 뽑아오기
-            # self.columns = self.df.columns
+            # 데이터에서 컬럼 뽑아오기
+            self.columns = self.df.columns
 
-            # for i in range(len(self.columns) - 1):
-            #     self.listWidget.addItem(self.columns[i])
+            for i in range(len(self.columns) - 1):
+                self.headerListWidget.addItem(self.columns[i])
+
+    # def toColumns
 
 
 if __name__ == '__main__':

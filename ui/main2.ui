@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1552</width>
-    <height>958</height>
+    <width>1396</width>
+    <height>643</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -87,22 +87,6 @@
         <string>Graph</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="1">
-         <widget class="QListView" name="headerListView">
-          <property name="minimumSize">
-           <size>
-            <width>200</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>200</width>
-            <height>161</height>
-           </size>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="0">
          <widget class="QGroupBox" name="groupBox">
           <property name="minimumSize">
@@ -114,24 +98,24 @@
           <property name="maximumSize">
            <size>
             <width>200</width>
-            <height>161</height>
+            <height>171</height>
            </size>
           </property>
           <property name="title">
-           <string>GroupBox</string>
+           <string>Graph Type</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_4">
            <item>
-            <widget class="QRadioButton" name="radioButton">
+            <widget class="QRadioButton" name="twoColTypeRadio">
              <property name="text">
               <string>Col + Col</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioButton_2">
+            <widget class="QRadioButton" name="valTypeRadio">
              <property name="text">
-              <string>Val + Val</string>
+              <string>Col + Col+ Val</string>
              </property>
             </widget>
            </item>
@@ -143,6 +127,115 @@
             </widget>
            </item>
           </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="minimumSize">
+           <size>
+            <width>231</width>
+            <height>171</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>171</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Column List</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QListWidget" name="headerListWidget"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QPushButton" name="pushButton">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Remove</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="3">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="minimumSize">
+           <size>
+            <width>231</width>
+            <height>171</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>171</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Columns for Chart</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QListWidget" name="chartColListWidget"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>10000</width>
+            <height>171</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Nothing in here</string>
+          </property>
          </widget>
         </item>
         <item row="1" column="0">
@@ -179,6 +272,9 @@
            </item>
           </layout>
          </widget>
+        </item>
+        <item row="1" column="1" rowspan="2" colspan="4">
+         <layout class="QVBoxLayout" name="verticalLayout_3"/>
         </item>
         <item row="2" column="0">
          <widget class="QGroupBox" name="groupBox_3">
@@ -236,56 +332,6 @@
           </layout>
          </widget>
         </item>
-        <item row="1" column="1" rowspan="2" colspan="8">
-         <layout class="QVBoxLayout" name="verticalLayout_3"/>
-        </item>
-        <item row="0" column="2">
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <widget class="QPushButton" name="pushButton">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>32</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Add</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_2">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>32</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Remove</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item row="0" column="3">
-         <widget class="QListView" name="toChartListView">
-          <property name="maximumSize">
-           <size>
-            <width>200</width>
-            <height>161</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="4" colspan="5">
-         <widget class="QGroupBox" name="groupBox_4">
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-         </widget>
-        </item>
        </layout>
       </widget>
      </widget>
@@ -297,7 +343,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1552</width>
+     <width>1396</width>
      <height>22</height>
     </rect>
    </property>

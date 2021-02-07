@@ -5,6 +5,7 @@ from PyQt5 import uic
 
 form_class = uic.loadUiType("ui/CheckDataframeIndexDialog.ui")[0]
 
+
 class CheckDataframeIndexDialog(QDialog, form_class):
     def __init__(self):
         super().__init__()
@@ -29,5 +30,3 @@ if __name__ == '__main__':
     main = CheckDataframeIndexDialog()
     main.show()
     sys.exit(app.exec_())
-
-    
